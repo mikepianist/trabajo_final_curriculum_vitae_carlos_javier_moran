@@ -1,0 +1,210 @@
+/*
+01-HEADER
+02-ELEMENTOS DE VENTANA EMERGENTE
+03-CONTENIDO CUERPO
+04-MAIN
+05-ASIDE
+06-FOOTER
+07-RESPONSIVO
+*/
+
+
+/******* 01-HEADER ******/
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;    
+}
+header #cont_foto {
+    background-color: #2aa9db;    
+}
+header #cont_foto button {    
+    margin-bottom: 10px;    
+    padding: 10px; 
+    color: #fef4e9;
+    border-radius: 10px;
+    border: solid 1px #da7c0c;
+    background-color: #ffc629; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+header #cont_foto button:hover{    
+    background: yellow;
+    color: #141414;
+}
+header #presentacion {
+    display: flex;      
+    align-items: center; 
+    justify-content: center;
+    background-color: #ffc629;     
+}
+header #presentacion nav, header #presentacion nav ul, header #presentacion nav ul li {   
+    padding: 0;
+    text-align: center;  
+}
+header #presentacion nav li {
+    list-style-type: none;  
+    color: #141414;    
+}
+header #presentacion nav li a {
+    text-decoration: none;
+    color: black;           
+} 
+
+/******* 02-ELEMENTOS DE VENTANA EMERGENTE ******/
+#ic_delate {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 90%;  
+    cursor: pointer;  
+}
+.contenedor_img {
+    width: 500px;
+    height: 500px;
+    margin-top: -30px;   
+    margin-left: 33%;       
+}
+
+/******* 03-CONTENIDO CUERPO ******/
+#cont_cuerpo {
+    margin-top: 10px;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+}
+button.mostrar_certif {
+    height:45px;	
+	font-size:20px;
+	margin:0 auto;
+	text-align:center;
+	cursor:pointer;
+    border-radius:15px;
+	background-color: #003D99 !important;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+    color: #FFFFFF!important;
+}
+button.mostrar_certif:hover {    
+	background-color: #caec09 !important;	
+    color: black!important;
+}
+
+/******* 04-MAIN ******/
+main section#experiencia h6 {
+    margin-top: 20px;
+}
+
+/******* 05-ASIDE ******/
+aside .progress {
+    height: 40px;
+    font-size: 20px;
+}
+aside section#idiomas div {
+    margin-top: 5px;
+}
+aside section#habilidades ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+aside section#habilidades li {    
+    padding-left: 30px;    
+}
+aside section#habilidades li:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url('../img/icono/ic_item.png');
+    background-size: cover;
+    background-position: center;
+    margin-left: -30px;
+}
+
+
+/******* 06-FOOTER ******/
+footer {
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgb(209, 209, 207);
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+
+/******* 07-RESPONSIVO ******/
+/*Para celular*/
+@media screen and (max-width: 767px) {
+    header h1 {
+        font-size: 20px;    
+    }	
+    header #presentacion {
+        padding-top: 20px;        
+    }  
+    header #presentacion nav li {
+        font-size: 15px;
+        list-style-type: none; 
+    }
+    header #cont_foto button {         
+        font-size: 15px;      
+    }     
+    #ic_delate {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: 60%;  
+        cursor: pointer;  
+    }
+    .contenedor_img {
+        width: 200px;
+        height: 200px;
+        margin-top: 10px;   
+        margin-left: 20%;       
+    }
+  	
+}
+
+/*Para tablet*/
+@media screen and (min-width: 768px) and  (max-width: 1023px) {
+    header #cont_foto button {         
+        font-size: 20px;      
+    }   
+    header #presentacion nav li {
+        font-size: 11px;
+    }
+    header #presentacion nav, header #presentacion nav ul, header #presentacion nav ul li {
+        display: inline;   
+    } 
+    #ic_delate {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: 75%;  
+        cursor: pointer;  
+    }
+    .contenedor_img {
+        width: 500px;
+        height: 500px;
+        margin-top: 10px;   
+        margin-left: 18%;       
+    }   	
+}
+
+/*Para pc*/
+@media screen and (min-width: 1024px) {
+    header h1 {
+        font-size: 50px;    
+    }	
+    header #presentacion nav li {
+        font-size: 20px;
+        margin-left: 20px;
+    }   
+    header #presentacion nav, header #presentacion nav ul, header #presentacion nav ul li {
+        display: inline;    
+    }
+    header #cont_foto button {         
+        font-size: 20px;      
+    } 
+}
